@@ -1,0 +1,12 @@
+{
+  "domain": "my_water_advisor",
+  "name": "My Water Advisor",
+  "codeowners": [],
+  "config_flow": true,
+  "dependencies": ["recorder"],
+  "documentation": "https://github.com/guruchill/mywateradvisor",
+  "integration_type": "service",
+  "iot_class": "cloud_polling",
+  "requirements": [],
+  "version": "0.1.0"
+}

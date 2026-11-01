@@ -1,0 +1,52 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "My Water Advisor",
+        "data": {
+          "email": "Email",
+          "password": "Password",
+          "name": "Statistic name",
+          "backfill_start": "Backfill start date",
+          "rehearsal": "Rehearsal (import to a separate test statistic)",
+          "poll_hours": "Check every (hours)",
+          "lookback_days": "Re-fetch the last (days)"
+        }
+      },
+      "meter": {
+        "title": "Choose meter",
+        "data": { "meter": "Meter" }
+      }
+    },
+    "error": {
+      "invalid_auth": "Login rejected by My Water Advisor.",
+      "cannot_connect": "Could not reach My Water Advisor.",
+      "no_meters": "No meters found on this account."
+    },
+    "abort": {
+      "already_configured": "This meter is already set up in this mode."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "data": {
+          "poll_hours": "Check every (hours)",
+          "lookback_days": "Re-fetch the last (days)"
+        }
+      }
+    }
+  },
+  "services": {
+    "delete_statistics": {
+      "name": "Delete imported statistics",
+      "description": "Permanently deletes one statistic created by this integration and all its hourly rows.",
+      "fields": {
+        "statistic_id": {
+          "name": "Statistic ID",
+          "description": "Must start with my_water_advisor:"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+delete_statistics:
+  fields:
+    statistic_id:
+      required: true
+      example: "my_water_advisor:water_12345_rehearsal"
+      selector:
+        text:
